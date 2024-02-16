@@ -1,0 +1,123 @@
+/* Adicione este estilo ao seu arquivo de folha de estilo CSS global */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Ajustes de layout responsivo */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: none;
+    }
+}
+
+/* Adicione o estilo de Kanban abaixo */
+
+.ticket-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.ticket-column {
+    flex: 1;
+    margin: 0 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.ticket-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ticket {
+    margin: 0 0 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.ticket h3 {
+    margin: 0 0 10px;
+}
+
+.ticket p {
+    margin: 0;
+}
+
+.ticket-aguardando {
+    border-color: #3498db;
+    background-color: #d4e6f1;
+}
+
+.ticket-em-andamento {
+    border-color: #2ecc71;
+    background-color: #d0e9c6;
+}
+
+.ticket-pendente {
+    border-color: #e74c3c;
+    background-color: #f5b7b1;
+}
+
+.ticket-concluido {
+    border-color: #27ae60;
+    background-color: #d5f5e3;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ticket/styles.css' %}">
+</head>
+<body>
+    <div class="agradecimento-container">
+        <h2>Obrigado pelo seu contato!</h2>
+        <p>Sua solicitação foi recebida com sucesso. Em breve, entraremos em contato para ajudá-lo.</p>
+        <a href="{% url 'home' %}"><button>Voltar à Página Inicial</button></a>
+    </div>
+</body>
+</html>
